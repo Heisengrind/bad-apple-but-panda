@@ -1,0 +1,13 @@
+//bridge-file-version: #0
+{
+	"format_version": "1.14.0",
+	"sound_definitions": {
+		"mob.panda.bad_apple": {
+			"category": "player",
+			"min_distance": 10,
+			"sounds": [
+				"sounds/bad_apple"
+			]
+		}
+	}
+}

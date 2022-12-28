@@ -1,0 +1,56 @@
+//bridge-file-version: #33
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.panda": {
+			"arrays": {
+				"textures": {
+					"Array.skins": [
+						"Texture.default",
+						"Texture.lazy",
+						"Texture.worried",
+						"Texture.playful",
+						"Texture.brown",
+						"Texture.weak",
+						"Texture.aggressive",
+						"Texture.bad_apple_1",
+						"Texture.bad_apple_2",
+						"Texture.bad_apple_3",
+						"Texture.bad_apple_4",
+						"Texture.bad_apple_5",
+						"Texture.bad_apple_6",
+						"Texture.bad_apple_7",
+						"Texture.bad_apple_8",
+						"Texture.bad_apple_9",
+						"Texture.bad_apple_10",
+						"Texture.bad_apple_11",
+						"Texture.bad_apple_12",
+						"Texture.bad_apple_13",
+						"Texture.bad_apple_14",
+						"Texture.bad_apple_15",
+						"Texture.bad_apple_16"
+					]
+				}
+			},
+			"geometry": "Geometry.default",
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"textures": [
+				"Array.skins[query.is_tamed*(query.mark_variant) + !query.is_tamed*(query.variant)]"
+			],
+			"uv_anim": {
+				"offset": [
+					0,
+					"query.is_tamed*(math.mod(math.floor(query.anim_time * 15),210) / 210)"
+				],
+				"scale": [
+					1,
+					"math.pow((1/210), query.is_tamed)"
+				]
+			}
+		}
+	}
+}

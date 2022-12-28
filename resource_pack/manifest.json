@@ -1,0 +1,53 @@
+//bridge-file-version: #1
+{
+	"format_version": 2,
+	"metadata": {
+		"authors": [
+			"Heisengrind"
+		],
+		"generated_with": {
+			"bridge": [
+				"2.4.2"
+			],
+			"dash": [
+				"0.10.8"
+			]
+		}
+	},
+	"header": {
+		"name": "pack.name",
+		"description": "pack.description",
+		"min_engine_version": [
+			1,
+			19,
+			40
+		],
+		"uuid": "1042e8e8-ec38-4863-b464-5e35b23f8291",
+		"version": [
+			1,
+			0,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "resources",
+			"uuid": "17de0381-71a8-4928-8466-12abeaeb6be0",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "5916602d-58bd-43fa-8cb6-1f43b16d1112",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	]
+}

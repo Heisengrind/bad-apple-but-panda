@@ -1,0 +1,72 @@
+//bridge-file-version: #16
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "minecraft:panda",
+			"materials": {
+				"default": "panda"
+			},
+			"textures": {
+				"default": "textures/entity/panda/panda",
+				"lazy": "textures/entity/panda/panda_lazy",
+				"worried": "textures/entity/panda/panda_worried",
+				"playful": "textures/entity/panda/panda_playful",
+				"brown": "textures/entity/panda/panda_brown",
+				"weak": "textures/entity/panda/panda_sneezy",
+				"aggressive": "textures/entity/panda/panda_aggressive",
+				"bad_apple_1": "textures/entity/panda/bad_panda/bad_panda_1",
+				"bad_apple_2": "textures/entity/panda/bad_panda/bad_panda_2",
+				"bad_apple_3": "textures/entity/panda/bad_panda/bad_panda_3",
+				"bad_apple_4": "textures/entity/panda/bad_panda/bad_panda_4",
+				"bad_apple_5": "textures/entity/panda/bad_panda/bad_panda_5",
+				"bad_apple_6": "textures/entity/panda/bad_panda/bad_panda_6",
+				"bad_apple_7": "textures/entity/panda/bad_panda/bad_panda_7",
+				"bad_apple_8": "textures/entity/panda/bad_panda/bad_panda_8",
+				"bad_apple_9": "textures/entity/panda/bad_panda/bad_panda_9",
+				"bad_apple_10": "textures/entity/panda/bad_panda/bad_panda_10",
+				"bad_apple_11": "textures/entity/panda/bad_panda/bad_panda_11",
+				"bad_apple_12": "textures/entity/panda/bad_panda/bad_panda_12",
+				"bad_apple_13": "textures/entity/panda/bad_panda/bad_panda_13",
+				"bad_apple_14": "textures/entity/panda/bad_panda/bad_panda_14",
+				"bad_apple_15": "textures/entity/panda/bad_panda/bad_panda_15",
+				"bad_apple_16": "textures/entity/panda/bad_panda/bad_panda_16"
+			},
+			"geometry": {
+				"default": "geometry.panda"
+			},
+			"animations": {
+				"unhappy": "animation.panda.unhappy",
+				"sneezing": "animation.panda.sneezing",
+				"walk": "animation.quadruped.walk",
+				"look_at_target": "animation.common.look_at_target",
+				"baby_transform": "animation.panda.baby_transform",
+				"sitting": "animation.panda.sitting",
+				"rolling": "animation.panda.rolling",
+				"lying": "animation.panda.lying",
+				"bad_apple": "animation.panda.bad_apple"
+			},
+			"animation_controllers": [
+				{
+					"move": "controller.animation.panda.move"
+				},
+				{
+					"unhappy": "controller.animation.panda.unhappy"
+				},
+				{
+					"sneezing": "controller.animation.panda.sneezing"
+				},
+				{
+					"baby": "controller.animation.panda.baby"
+				}
+			],
+			"render_controllers": [
+				"controller.render.panda"
+			],
+			"spawn_egg": {
+				"texture": "spawn_egg",
+				"texture_index": 54
+			}
+		}
+	}
+}

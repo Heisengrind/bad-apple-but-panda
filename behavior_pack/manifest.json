@@ -1,0 +1,53 @@
+{
+	"format_version": 2,
+	"metadata": {
+		"authors": [
+			"Heisengrind"
+		],
+		"generated_with": {
+			"bridge": [
+				"2.4.2",
+				"1.8.4"
+			],
+			"dash": [
+				"0.10.8"
+			]
+		}
+	},
+	"header": {
+		"name": "pack.name",
+		"description": "pack.description",
+		"min_engine_version": [
+			1,
+			19,
+			40
+		],
+		"uuid": "5916602d-58bd-43fa-8cb6-1f43b16d1112",
+		"version": [
+			1,
+			0,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "86b6d397-e45c-4f2e-a6df-97a1c807a888",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "1042e8e8-ec38-4863-b464-5e35b23f8291",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	]
+}

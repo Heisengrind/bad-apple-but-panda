@@ -1,0 +1,63 @@
+//bridge-file-version: #2
+{
+	"format_version": "1.10.0",
+	"animations": {
+		"animation.panda.bad_apple": {
+			"timeline": {
+				"219": [
+					"@s bad_apple_end"
+				],
+				"0.0": [
+					"/playsound mob.panda.bad_apple @a ~ ~ ~ 3"
+				],
+				"13.95": [
+					"@s bad_apple_2"
+				],
+				"27.9": [
+					"@s bad_apple_3"
+				],
+				"41.85": [
+					"@s bad_apple_4"
+				],
+				"55.8": [
+					"@s bad_apple_5"
+				],
+				"69.75": [
+					"@s bad_apple_6"
+				],
+				"83.7": [
+					"@s bad_apple_7"
+				],
+				"97.65": [
+					"@s bad_apple_8"
+				],
+				"111.6": [
+					"@s bad_apple_9"
+				],
+				"125.55": [
+					"@s bad_apple_10"
+				],
+				"139.5": [
+					"@s bad_apple_11"
+				],
+				"153.45": [
+					"@s bad_apple_12"
+				],
+				"167.4": [
+					"@s bad_apple_13"
+				],
+				"181.3": [
+					"@s bad_apple_14"
+				],
+				"195.25": [
+					"@s bad_apple_15"
+				],
+				"209.20": [
+					"@s bad_apple_16"
+				]
+			},
+			"animation_length": 219.1,
+			"loop": true
+		}
+	}
+}

@@ -1,0 +1,286 @@
+//bridge-file-version: #7
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.panda.baby": {
+			"initial_state": "baby",
+			"states": {
+				"baby": {
+					"animations": [
+						{
+							"baby_transform": "query.is_baby"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.panda.move": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": [
+						{
+							"walk": "query.modified_move_speed"
+						},
+						"look_at_target"
+					],
+					"transitions": [
+						{
+							"rolling": "query.roll_counter > 0"
+						},
+						{
+							"sitting": "query.sit_amount > 0"
+						},
+						{
+							"lying": "query.lie_amount > 0"
+						},
+						{
+							"bad_buffer": "query.is_tamed"
+						}
+					]
+				},
+				"lying": {
+					"animations": [
+						"lying"
+					],
+					"transitions": [
+						{
+							"default": "query.lie_amount <= 0"
+						},
+						{
+							"rolling": "query.roll_counter > 0"
+						},
+						{
+							"sitting": "query.sit_amount > 0"
+						}
+					]
+				},
+				"rolling": {
+					"animations": [
+						"rolling"
+					],
+					"transitions": [
+						{
+							"default": "query.roll_counter <= 0"
+						},
+						{
+							"sitting": "query.sit_amount > 0"
+						},
+						{
+							"lying": "query.lie_amount > 0"
+						}
+					]
+				},
+				"sitting": {
+					"animations": [
+						"sitting"
+					],
+					"transitions": [
+						{
+							"default": "query.sit_amount <= 0"
+						},
+						{
+							"rolling": "query.roll_counter > 0"
+						},
+						{
+							"lying": "query.lie_amount > 0"
+						}
+					]
+				},
+				"bad_buffer": {
+					"blend_transition": 0.3,
+					"transitions": [
+						{
+							"bad_apple_1": "(1.0)"
+						}
+					]
+				},
+				"bad_apple_1": {
+					"animations": [
+						"bad_apple"
+					],
+					"transitions": [
+						{
+							"bad_apple_2": "query.mark_variant == 8"
+						}
+					]
+				},
+				"bad_apple_2": {
+					"animations": [
+						"bad_apple"
+					],
+					"transitions": [
+						{
+							"bad_apple_3": "query.mark_variant == 9"
+						}
+					]
+				},
+				"bad_apple_3": {
+					"animations": [
+						"bad_apple"
+					],
+					"transitions": [
+						{
+							"bad_apple_4": "query.mark_variant == 10"
+						}
+					]
+				},
+				"bad_apple_4": {
+					"animations": [
+						"bad_apple"
+					],
+					"transitions": [
+						{
+							"bad_apple_5": "query.mark_variant == 11"
+						}
+					]
+				},
+				"bad_apple_5": {
+					"animations": [
+						"bad_apple"
+					],
+					"transitions": [
+						{
+							"bad_apple_6": "query.mark_variant == 12"
+						}
+					]
+				},
+				"bad_apple_6": {
+					"animations": [
+						"bad_apple"
+					],
+					"transitions": [
+						{
+							"bad_apple_7": "query.mark_variant == 13"
+						}
+					]
+				},
+				"bad_apple_7": {
+					"animations": [
+						"bad_apple"
+					],
+					"transitions": [
+						{
+							"bad_apple_8": "query.mark_variant == 14"
+						}
+					]
+				},
+				"bad_apple_8": {
+					"animations": [
+						"bad_apple"
+					],
+					"transitions": [
+						{
+							"bad_apple_9": "query.mark_variant == 15"
+						}
+					]
+				},
+				"bad_apple_9": {
+					"animations": [
+						"bad_apple"
+					],
+					"transitions": [
+						{
+							"bad_apple_10": "query.mark_variant == 16"
+						}
+					]
+				},
+				"bad_apple_10": {
+					"animations": [
+						"bad_apple"
+					],
+					"transitions": [
+						{
+							"bad_apple_11": "query.mark_variant == 17"
+						}
+					]
+				},
+				"bad_apple_11": {
+					"animations": [
+						"bad_apple"
+					],
+					"transitions": [
+						{
+							"bad_apple_12": "query.mark_variant == 18"
+						}
+					]
+				},
+				"bad_apple_12": {
+					"animations": [
+						"bad_apple"
+					],
+					"transitions": [
+						{
+							"bad_apple_13": "query.mark_variant == 19"
+						}
+					]
+				},
+				"bad_apple_13": {
+					"animations": [
+						"bad_apple"
+					],
+					"transitions": [
+						{
+							"bad_apple_14": "query.mark_variant == 20"
+						}
+					]
+				},
+				"bad_apple_14": {
+					"animations": [
+						"bad_apple"
+					],
+					"transitions": [
+						{
+							"bad_apple_15": "query.mark_variant == 21"
+						}
+					]
+				},
+				"bad_apple_15": {
+					"animations": [
+						"bad_apple"
+					],
+					"transitions": [
+						{
+							"bad_apple_16": "query.mark_variant == 22"
+						}
+					]
+				},
+				"bad_apple_16": {
+					"animations": [
+						"bad_apple"
+					],
+					"blend_transition": 0.3,
+					"transitions": [
+						{
+							"default": "!query.is_tamed"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.panda.sneezing": {
+			"initial_state": "baby",
+			"states": {
+				"baby": {
+					"animations": [
+						{
+							"sneezing": "query.sneeze_counter"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.panda.unhappy": {
+			"initial_state": "baby",
+			"states": {
+				"baby": {
+					"animations": [
+						{
+							"unhappy": "query.unhappy_counter"
+						}
+					]
+				}
+			}
+		}
+	}
+}
